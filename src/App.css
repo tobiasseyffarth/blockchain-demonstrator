@@ -1,0 +1,15 @@
+html {
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
