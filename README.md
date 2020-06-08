@@ -27,5 +27,5 @@ The web app was presented during a workshop for modelling BPMN process models he
 - Tobias Seyffarth
 
 ### License
-- MIT
-- 
+- Blockchain Demonstrator: MIT
+- Presentation: Creative Commons Attribution 4.0 International
