@@ -26,7 +26,7 @@ export default class MyTabView extends Component {
     return (
       <div>
         <div>
-          <p>Heading</p>
+          <p></p>
         </div>
         <div>
           <TabView>

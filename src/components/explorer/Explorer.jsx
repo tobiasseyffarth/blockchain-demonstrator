@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from 'primereact/button';
+import { Growl } from 'primereact/growl';
 import Transaction from '../Transaction';
 import Blockchain from '../../logic/blockchain/blockchain';
 import * as QueryHandler from '../../logic/handler/queryHandler';
@@ -17,8 +18,9 @@ export default class Explorer extends Component {
       noBlocks: 0,
       blocks: [],
     }
+    this.checkIntegrity= this.checkIntegrity.bind(this);
   }
-  
+
   componentDidMount() {
     this.queryBlockchain();
   }
@@ -56,8 +58,13 @@ export default class Explorer extends Component {
   }
 
   checkIntegrity() {
-    const result= CheckHandler.checkBlockchain(Blockchain);
-    console.log(result);
+    const result = CheckHandler.checkBlockchain(Blockchain);
+        
+    this.growl.show({
+      severity: 'info',
+      summary: 'Integritiy checked',
+      detail: 'result: ' + result 
+    });
   }
 
   renderBlocks() {
@@ -85,7 +92,8 @@ export default class Explorer extends Component {
   render() {
     return (
       <div>
-        <Button 
+        <Growl ref={(el) => this.growl = el} />
+        <Button
           label="Verify integrity"
           onClick={this.checkIntegrity}
         />
