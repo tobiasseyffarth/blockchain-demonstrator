@@ -10,13 +10,17 @@ The web app was presented during a workshop for modelling BPMN process models he
 - Demonstration of account generation and transaction execution within a blockchain.
 - Retreival of the transaction list.
 
+### Run
+The blockchain demonstrator is available on https://seyffarth.me/apps/blockchain-demonstrator/
+
 ### Installation
+Additionally, the blockchain demonstrator can be started locally.
  1. Open a terminal 
-   2. Clone the repository `git clone https://github.com/tobiasseyffarth/bpmn-analyzer.git`
-   3. Change directory `cd blockchain-demonstrator`
-   4. Install dependencies `npm install`
-   5. Start BPMN Analyzer `npm run start`
-   6. Open BPMN Analyzer in your preferred browser
+ 2. Clone the repository `git clone https://github.com/tobiasseyffarth/bpmn-analyzer.git`
+ 3. Change directory `cd blockchain-demonstrator`
+ 4. Install dependencies `npm install`
+ 5. Start BPMN Analyzer `npm run start`
+ 6. Open BPMN Analyzer in your preferred browser
 
 ### Requirements
 - Firefox version -1 or Chrome version -1 (in both cases a desktop version is required)
