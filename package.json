@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "@neutrinojs/airbnb": "^8.3.0",
-    "@neutrinojs/react": "^8.3.0",
+    "@neutrinojs/react": "^9.5.0",
     "@types/node": "^13.9.2",
     "neutrino": "^8.3.0"
   }
